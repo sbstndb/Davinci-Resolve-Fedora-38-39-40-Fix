@@ -84,6 +84,13 @@ sudo mv libgio* disabled-libraries
 sudo mv libgmodule* disabled-libraries
 ```
 
+## 5) Fix black timeline 
+
+If your computer use NVIDIA Optimus, you should launch DaVinci Resolve with the discrete GPU.
+With an NVIDIA card, you should launch resolve with the command below :
+
+```__NV_PRIME_RENDER_OFFLOAD_PROVIDER=NVIDIA-G0 __GLX_VENDOR_LIBRARY_NAME=nvidia /opt/resolve/bin/resolve```
+
 ---
 
 Now you have a perfectly functional Davinci Resolve on your Fedora 38-39-40. Let me know if you find some issues or you have some suggestion to improve the code or if there are new fixing necessities with the updates. 
